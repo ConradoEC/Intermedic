@@ -55,7 +55,7 @@ if(logado)
 {
     const urlId = sessionStorage.getItem('Id')
 
-    fetch('http://localhost:3000/vaccine')
+    fetch('https://api-interdisciplinar-nvn0.onrender.com/vaccine')
     .then(res => res.json())
     .then((json) =>
     {
@@ -765,7 +765,7 @@ function redirecionar()
        setTimeout((() =>
         {
             // COLOCAR O LINK DA MESMA PAGINA
-            window.location = 'http://localhost/Trabalho_do_inter/Vacinacao/index.html'
+            window.location = 'https://intermedic.vercel.app/Vacinacao/index.html'
         }), 150) 
     }
 }
@@ -799,21 +799,21 @@ window.onload = function()
     if(logado)
     {
         perfil.innerText = 'person'
-        perfil.parentNode.href = 'http://localhost/Trabalho_do_inter/forms/logout.php'
+        perfil.parentNode.href = 'https://intermedic.vercel.app/forms/logout.php'
         Login.innerText = 'Bem vindo, ' + sessionStorage.getItem('Nome') + '!'
         menuSide_span.innerText = sessionStorage.getItem('Nome') + ' ' + sessionStorage.getItem('Sobrenome')
         menuSide_li_login_or_logout.innerText = 'Logout'
-        menuSide_li_login_or_logout.parentNode.href = 'http://localhost/Trabalho_do_inter/forms/logout.php'
+        menuSide_li_login_or_logout.parentNode.href = 'https://intermedic.vercel.app/forms/logout.php'
         menuSide_li_login_or_logout_text.innerText = 'Logout'
         faixaEtaria.innerText = userAge
     }
     else
     {
         perfil.innerText = 'account_circle'
-        perfil.parentNode.href = 'http://localhost/Trabalho_do_inter/forms/index.php'
+        perfil.parentNode.href = 'https://intermedic.vercel.app/forms/index.php'
         menuSide_span.innerText = 'Faça login'
         menuSide_li_login_or_logout.innerText = 'account_circle'
-        menuSide_li_login_or_logout.parentNode.href = 'http://localhost/Trabalho_do_inter/forms/index.php'
+        menuSide_li_login_or_logout.parentNode.href = 'https://intermedic.vercel.app/forms/index.php'
         menuSide_li_login_or_logout_text.innerText = 'Login'
     }
 

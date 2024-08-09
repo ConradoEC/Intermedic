@@ -32,7 +32,7 @@
                         setcookie('nome', $name, time() + 3600);
                         setcookie('senha', $password, time() + 3600);
                         setcookie('email', $email, time() + 3600);
-                        header('Location: http://localhost/Trabalho_do_Inter?id='. $obj->id . '&lastName=' . $obj->sobrenome . '&WasBorn=' . $obj->dataNascimento);
+                        header('Location: https://intermedic.vercel.app?id='. $obj->id . '&lastName=' . $obj->sobrenome . '&WasBorn=' . $obj->dataNascimento);
                     }
                     else
                     {  

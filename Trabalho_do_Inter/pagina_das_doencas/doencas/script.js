@@ -29,7 +29,6 @@ const advice_text = document.getElementsByClassName('advice_text');
 const container_advice_icons = document.getElementById('container_advice_icons');
 var logado = sessionStorage.getItem('N1');
 
-// fetch('https://conradoec.github.io/Trabalho_do_Inter/pagina_das_doen%C3%A7as/doen%C3%A7as/diseaseContent.json')
 fetch('./diseaseContent.json')
 .then(res=>res.json())
 .then((json) =>
@@ -452,20 +451,20 @@ window.onload = function()
     if(logado)
     {
         perfil.innerText = 'person'
-        perfil.parentNode.href = 'http://localhost/Trabalho_do_inter/forms/logout.php'
+        perfil.parentNode.href = 'https://intermedic.vercel.app/forms/logout.php'
         Login.innerText = 'Bem vindo, ' + sessionStorage.getItem('Nome') + '!'
         menuSide_span.innerText = sessionStorage.getItem('Nome') + ' ' + sessionStorage.getItem('Sobrenome')
         menuSide_li_login_or_logout.innerText = 'Logout'
-        menuSide_li_login_or_logout.parentNode.href = 'http://localhost/Trabalho_do_inter/forms/logout.php'
+        menuSide_li_login_or_logout.parentNode.href = 'https://intermedic.vercel.app/forms/logout.php'
         menuSide_li_login_or_logout_text.innerText = 'Logout'
     }
     else
     {
         perfil.innerText = 'account_circle'
-        perfil.parentNode.href = 'http://localhost/Trabalho_do_inter/forms/index.php'
+        perfil.parentNode.href = 'https://intermedic.vercel.app/forms/index.php'
         menuSide_span.innerText = 'Faça login'
         menuSide_li_login_or_logout.innerText = 'account_circle'
-        menuSide_li_login_or_logout.parentNode.href = 'http://localhost/Trabalho_do_inter/forms/index.php'
+        menuSide_li_login_or_logout.parentNode.href = 'https://intermedic.vercel.app/forms/index.php'
         menuSide_li_login_or_logout_text.innerText = 'Login'
     }
 

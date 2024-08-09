@@ -252,14 +252,14 @@ window.onload = function()
     if(logado)
     {
         perfil.innerText = 'circle'
-        perfil.parentNode.href = 'http://localhost/Trabalho_do_inter/forms/logout.php'
+        perfil.parentNode.href = 'https://intermedic.vercel.app/forms/logout.php'
         Login.innerText = 'Bem vindo, ' + sessionStorage.getItem('Nome') + '!'
         menuSide_span.innerText = sessionStorage.getItem('Nome') + ' ' + sessionStorage.getItem('Sobrenome')
     }
     else
     {
         perfil.innerText = 'account_circle'
-        perfil.parentNode.href = 'http://localhost/Trabalho_do_inter/forms/index.php'
+        perfil.parentNode.href = 'https://intermedic.vercel.app/forms/index.php'
         menuSide_span.innerText = 'Faça login'
     }
 

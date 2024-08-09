@@ -22,7 +22,7 @@ const newText = document.createElement('p')
 const url = 'https://node-api-0bwb.onrender.com/bd';
 
 // fetch('https://fakestoreapi.com/products?limit=5')
-fetch('http://localhost:3000/bd')
+fetch('https://api-interdisciplinar-nvn0.onrender.com/bd')
 .then(res=>res.json())
 .then((json) =>
 {
@@ -646,14 +646,14 @@ function menu_modal(container_sliders_window)
         container_loading.style.setProperty('display', 'flex');
         NotScroll()
 
-        fetch('http://localhost:3000/bd')
+        fetch('https://api-interdisciplinar-nvn0.onrender.com/bd')
         .then(res=>res.json())
         .then((json) =>
         {   
             var ids = container_sliders_window.target.id
             console.log(container_sliders_window.target)
 
-            const url_post = 'http://localhost:3000/form'
+            const url_post = 'https://api-interdisciplinar-nvn0.onrender.com/form'
             comments_box_link[0].setAttribute('id', `${ids}`)
             
             if(!sessionStorage.getItem('Id'))
@@ -707,7 +707,7 @@ function takeComments(view_comments)
 
     var indicator = 1
 
-    fetch('http://localhost:3000/form/takeData')
+    fetch('https://api-interdisciplinar-nvn0.onrender.com/form/takeData')
     .then(res=>res.json())
     .then((json) =>
     {
@@ -738,7 +738,7 @@ function takeComments(view_comments)
 
             const comment_image_img = document.getElementById('comment_image_img')
 
-            fetch('http://localhost:3000/bd')
+            fetch('https://api-interdisciplinar-nvn0.onrender.com/bd')
             .then(res=>res.json())
             .then((json) =>
             {
@@ -824,20 +824,20 @@ window.onload = function()
     if(logado)
     {
         perfil.innerText = 'person'
-        perfil.parentNode.href = 'http://localhost/Trabalho_do_inter/forms/logout.php'
+        perfil.parentNode.href = 'https://intermedic.vercel.app/forms/logout.php'
         Login.innerText = 'Bem vindo, ' + sessionStorage.getItem('Nome') + '!'
         menuSide_span.innerText = sessionStorage.getItem('Nome') + ' ' + sessionStorage.getItem('Sobrenome')
         menuSide_li_login_or_logout.innerText = 'Logout'
-        menuSide_li_login_or_logout.parentNode.href = 'http://localhost/Trabalho_do_inter/forms/logout.php'
+        menuSide_li_login_or_logout.parentNode.href = 'https://intermedic.vercel.app/forms/logout.php'
         menuSide_li_login_or_logout_text.innerText = 'Logout'
     }
     else
     {
         perfil.innerText = 'account_circle'
-        perfil.parentNode.href = 'http://localhost/Trabalho_do_inter/forms/index.php'
+        perfil.parentNode.href = 'https://intermedic.vercel.app/forms/index.php'
         menuSide_span.innerText = 'Faça login'
         menuSide_li_login_or_logout.innerText = 'account_circle'
-        menuSide_li_login_or_logout.parentNode.href = 'http://localhost/Trabalho_do_inter/forms/index.php'
+        menuSide_li_login_or_logout.parentNode.href = 'https://intermedic.vercel.app/forms/index.php'
         menuSide_li_login_or_logout_text.innerText = 'Login'
     }
 
@@ -1053,7 +1053,7 @@ function change(li)
             menu_counter = 1
         }
     
-        fetch('http://localhost:3000/bd')
+        fetch('https://api-interdisciplinar-nvn0.onrender.com/bd')
         .then(res=>res.json())
         .then((json) =>
         {

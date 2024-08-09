@@ -79,10 +79,10 @@ var phrases = ['NÃO OS CONSUMA, SEM CONHECÊ-LOS.',
                 'PODEMOS AUXILIÁ-LO <BR> COM SEUS SINTOMAS.',
                 'JÁ SE CADASTROU? FAÇA AINDA HOJE!',
                 'DEIXE SUA CADERNETA ATUALIZADA']
-var links_for_button_link = ['http://localhost/Trabalho_do_inter/pagina_dos_remedios',
-                            'http://localhost/Trabalho_do_inter/pagina_das_doencas', 
-                            'http://localhost/Trabalho_do_inter/forms/forms-cadastro/cadastro.html',
-                            'http://localhost/Trabalho_do_inter/vacinacao']
+var links_for_button_link = ['https://intermedic.vercel.app/pagina_dos_remedios',
+                            'https://intermedic.vercel.app/pagina_das_doencas', 
+                            'https://intermedic.vercel.app/forms/forms-cadastro/cadastro.html',
+                            'https://intermedic.vercel.app/vacinacao']
 var colors;
 var on = 0;
 var fonts;
@@ -552,7 +552,7 @@ window.onload = function()
         }
         menuSide_span.innerText = sessionStorage.getItem('Nome') + ' ' + sessionStorage.getItem('Sobrenome')
         menuSide_li_login_or_logout.innerText = 'Logout'
-        menuSide_li_login_or_logout.parentNode.href = 'http://localhost/Trabalho_do_inter/forms/logout.php'
+        menuSide_li_login_or_logout.parentNode.href = 'https://intermedic.vercel.app/forms/logout.php'
         menuSide_li_login_or_logout_text.innerHTML = 'Logout'
     }
     else if(!logado)
@@ -561,7 +561,7 @@ window.onload = function()
         perfil.parentNode.href = './forms/index.php'
         menuSide_span.innerText = 'Faça login'
         menuSide_li_login_or_logout.innerText = 'account_circle'
-        menuSide_li_login_or_logout.parentNode.href = 'http://localhost/Trabalho_do_inter/forms/index.php'
+        menuSide_li_login_or_logout.parentNode.href = 'https://intermedic.vercel.app/forms/index.php'
         menuSide_li_login_or_logout_text.innerHTML = 'Login'
     }
 

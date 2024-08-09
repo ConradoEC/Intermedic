@@ -1,0 +1,1829 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Poppins:wght@400;700&display=swap');
+
+*
+{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    /* box-sizing: border-box; */
+}
+    
+    body
+    {
+        padding: 0;
+        margin: 0;
+        overflow-x: hidden;
+    }
+    
+    #section1
+    {
+        height: auto;
+        overflow: hidden;
+    }
+    
+    header
+    {
+        height: 12.5vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: white;
+        padding: 0px 8vw;
+    }
+    
+    header a
+    {
+        height: 80%;
+    }
+    
+    header a img
+    {
+        height: 100%;
+    }
+
+    header ul 
+{
+    min-width: 55%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    font-family: sans-serif;
+    font-size: 1.5em;
+    color: #d74950;
+}
+
+    .item
+    {
+        user-select: none;
+        cursor: pointer;
+        display: flex;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+    }
+    
+    .lastNotices
+    {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    header ul img
+    {
+        width: 70px;
+    }
+    
+    .header_links
+    {
+        text-decoration: none;
+        color: currentColor;
+        display: flex;
+        align-items: center;
+        gap: 7px;
+    }
+    
+    .material-symbols-outlined
+    {
+        font-size: max(2vw, 40px);
+        text-align: center;
+    }
+    
+    #search
+    {
+        background-color: rgb(208, 161, 161);
+    }
+    
+    .item:nth-child(6)
+    {
+        width: auto;
+    }
+    
+    
+    #menu_button
+    {
+        position: relative;
+        cursor: pointer;
+        display: none;
+    }
+    
+    /* sdsdvdsvdvsvsvsvs */
+    
+    #menuSide_back
+    {
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        background-color: black;
+        opacity: 0.6;
+        z-index: 2;
+        bottom: 0;
+        right: 0;
+        transition: opacity 1s ease-out;
+        display: none;
+    }
+    
+    #menuSide
+    {
+        /* height: calc(100vh - 80px); */
+        height: 100%;
+        /* width: calc(75vw - 10px); */
+        width: 75vw;
+        z-index: 2;
+        background-color: white;
+        position: fixed;
+        top: 0%;
+        right: -100%;
+    
+        transition: right 1s ease-out;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+    }
+    
+    #menuSide_close
+    {
+        display: flex;
+        align-items: center;
+        /* height: 6.5%; */
+        height: 44px;
+        background-color: red;
+        border-radius: 100%;
+        color: white;
+    }
+    
+    #menuSide_ul
+    {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2.5%;
+        /* background-color: blue; */
+    }
+    
+    .menuSide_ul_li_perfil
+    {
+        /* background-color: red; */
+        height: max(30vh, 170px);
+        width: max(30vh, 170px);
+        padding: 3%;
+    }
+    
+    .menuSide_ul_perfil
+    {
+        width: 100%;
+        height: 100%;
+        /* background-color: blue; */
+    }
+    
+    .img_div
+    {
+        margin: auto;
+        border-radius: 100%;
+        background-image: url(https://i.im.ge/2023/10/06/NBepR1.image-removebg-preview.png);
+        background-position: center;
+        background-size: auto 100%;
+        background-repeat: no-repeat;
+        height: 73%;
+        max-width: 73%;
+    }
+    
+    .menuSide_ul_li_text
+    {
+        height: 27%;
+        /* background-color: green; */
+        font-size: 20px;
+        font-weight: bold;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .menuSide_li
+    {
+        /* background-color: red; */
+        background-image: linear-gradient(to right, rgb(243, 61, 61) 60%, white 100%);
+        padding: 3% 0%;
+        /* rgb(245, 100, 100) */
+        width: calc(100% + 20px);
+        height: auto;
+        font-size: 23px;
+    }
+    
+    .menuSide_li:nth-child(2)
+    {
+        margin-top: 7%;
+    }
+    
+    .menuSide_li a
+    {
+        text-decoration: none;
+        color: white;
+        padding: 0% 3%;
+        font-weight: bold;
+    
+        display: flex;
+        align-items: center;
+        gap: 3%;
+    }
+    
+    .menuSide_li a span
+    {
+        font-size: 35px;
+    }
+    
+    #menuSide_li_login_or_logout_text
+    {
+        font-size: inherit;
+    }
+
+    .menu_transition
+    {
+        animation: menuBack 0.6s;
+    }
+    
+    @keyframes menuBack
+    {
+        0%
+        {
+            opacity: 0;
+        }
+        100%
+        {
+            opacity: 0.6;
+        }
+    }
+    
+    .menu_transition2
+    {
+        animation: menuBack2 0.7s;
+    }
+    
+    @keyframes menuBack2
+    {
+        0%
+        {
+            opacity: 0.6;
+        }
+    
+        100%
+        {
+            opacity: 0;
+        }
+    }
+    
+    /* sdsdvdsvdvsvsvsvs */
+    
+    .pages 
+    {
+        height: 8vh;
+        padding: 0% 15%;
+        background-color: rgb(149, 149, 255);
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        list-style: none;
+        border-bottom: 2px solid black;
+        font-size: max(2.8vh, 18px);
+        gap: 20px
+    }
+    
+    .pages_a 
+    {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        font-family: Poppins;
+    }
+/* CONTEÚDO QUE NÃO FAZ PARTE DO CABEÇALHO */
+
+
+
+
+
+
+/* SECTION2 */
+
+#section2
+{
+    height: calc(50vh - 20.6vh);
+    max-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: max(3vw, 10vh) 0vw;
+}
+
+.container_text
+{
+    height: max(7vw, 10vh) ;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.container_text_p
+{
+    font-family: Poppins;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    font-size: max(3vw, 5vh);
+}
+
+
+
+
+
+
+
+
+
+.section_medicine
+{
+    height: auto;
+    width: 55vw;
+    background-color: rgb(238, 73, 73);
+    padding: 1vw;
+    margin: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0px 0px 4px 1px;
+}
+
+#medicine_search
+{
+    background-color: whitesmoke;
+    border-radius: 5px;
+    padding: 0.8vw 4vw;
+    padding-left: 1vw;
+    width: calc(95% - 3.3vw);
+    height: 90%;
+    border: none;
+    font-family: Poppins;
+    font-size: max(1.5vw, 18px);
+    cursor: pointer;
+}
+
+
+.close_span
+{
+    position: absolute;
+    right: 2vw;
+    display: none;
+    cursor: pointer;
+}
+
+.section_medicine_ul
+{
+    background-color: rgb(255, 78, 78);
+    /* width: calc(80% + 25px); */
+    position: absolute;
+    width: 100%;
+    list-style: none;
+    padding: 10px 0px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    z-index: 1;
+    /* top: 75%; */
+    top: 100%;
+    /* box-shadow: inset 0px -4px 4px 0.5px; */
+    /* box-shadow: inset 0px -4px 10px -6px; */
+}
+
+.section_medicine_ul li
+{
+    background-color: rgb(205, 169, 169);
+    display: inline-block;
+    border-radius: 5px;
+    width: 95%;
+}
+
+.section_medicine_ul li:hover div
+{
+    background-color: rgb(0, 196, 196);
+    color: white
+}
+
+.section_medicine_ul_li_div
+{
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: max(1.6vw, 15px);
+    background-color: rgba(255, 178, 178, 1);
+    border-radius: 5px;
+    padding: 8px;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    transition: background 0.5s, color 0.3s;
+    gap: 3%;
+    cursor: pointer;
+}
+
+.section_medicine_ul li img
+{
+    height: max(3vw, 40px);
+}
+
+
+
+
+
+
+
+/* SECTION3 */
+
+#section3
+{
+    min-height: 90vh;
+    max-width: 100vw;
+    margin: 5% 0%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    gap: 2%;
+}
+
+.container_loading
+{
+    position: fixed;
+    z-index: 10;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+
+    /* background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    display: none; */
+}
+
+.loading
+{
+    background-color: white;
+    width: 2vw;
+    height: 2vw;
+    z-index: 1;
+    border-radius: 100%;
+    animation: loading 1s infinite ease-in-out;
+}
+
+.loading:nth-child(2)
+{
+    animation-delay: 0.1s;
+}
+
+.loading:nth-child(3)
+{
+    animation-delay: 0.2s;
+}
+
+.loading_background
+{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: black;
+    opacity: 0.6;
+    top: 0;
+    left: 0;
+}
+
+@keyframes loading 
+{
+    0%
+    {
+        width: 2vw;
+        height: 2vw;
+    }
+
+    20%
+    {
+        width: 3vw;
+        height: 3vw;
+    }
+    
+    100%
+    {
+        width: 2vw;
+        height: 2vw;
+    }
+}
+
+.container_sliders
+{
+    gap: 5%;
+    /* width: 23%;
+    height: 75%; */
+    min-height: 76.5vh;
+    max-height: 76.5vh;
+    height: 100%;
+    width: 26%;
+    display: flex;
+    position: relative;
+}
+
+.container_sliders_window
+{
+    position: absolute;
+    width: calc(500% + 400px);
+    min-height: 100%;
+    gap: 100px;
+
+    display: flex;
+    justify-content: center;
+    left: calc(-200% - 200px);
+    transition: 1s ease;
+}
+
+.container_sliders_window a
+{
+    text-decoration: none;
+}
+
+.arrow
+{
+    background-color: rgba(255, 93, 93, 0.671);
+    backdrop-filter: blur(3px);
+    color: white;
+    position: absolute;
+    font-size: max(5vw, 8vh);
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 50%;
+    user-select: none;
+}
+
+.arrow:nth-child(3)
+{
+    /* top: 50%; */
+    /* left: 29.2%; */
+    /* transform: translate(-80%, -60%); */
+    left: 10%;
+    transform: translate(-100%);
+}
+
+
+.arrow:nth-child(4)
+{
+    /* top: 50%; */
+    /* left: 70%; */
+    /* left: 69.6%; */
+    /* transform: translate(0%, -60%); */
+    left: 90%;
+    transform: translate(0%);
+}
+
+.slider
+{
+    width: 40%;
+    max-height: fit-content;
+    min-height: 75vh;
+    height: fit-content;
+    border-radius: 30px;
+    background-color: rgb(231, 231, 231);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+    border: 2px solid red;
+}
+
+.slider img
+{
+    height: 45.9vh;
+    /* height: 60%; */
+    max-width: 100%;
+    /* background-color: aquamarine; */
+}
+.slider_p
+{
+    height: fit-content;
+    /* min-height: 22.95vh; */
+    width: 90%;
+    font-size: max(1.5vw, 19px);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: justify;
+}
+
+.slider_hr
+{
+    width: 80%;
+    height: 2px;
+    background-color: black;
+    border: none;
+}
+
+.plus
+{
+    font-size: max(1.6vw, 18px);
+    border-radius: 100%;
+    background-color: rgb(255, 78, 78);
+    /* color: rgb(113, 113, 253); */
+    color: white;
+    cursor: pointer;
+}
+
+.comments_box
+{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: max(4vw,30px);
+    height: auto;
+    width: 100%;
+    color: white;
+}
+
+.comments_box a
+{
+    text-decoration: none;
+    color: rgb(255, 254, 254);
+}
+
+.comments
+{
+    z-index: 1;
+    font-size: max(2vw, 20px);
+    font-family: Poppins;
+    /* font-style: italic; */
+    background-color: rgba(255, 12, 12, 0.355);
+    /* background-color: rgba(14, 166, 183, 1); */
+    /* color: white; */
+    padding-top: max(0.5vw, 1.1vh);
+    padding-bottom: max(0.5vw, 1.1vh);
+    padding-right: max(1.5vw, 1.3vh);
+    padding-left: max(1.5vw, 1.3vh);
+    border-radius: 30px;
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.comments span
+{
+    font-size: 20px;
+}
+
+#comment
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+}
+
+#teste_comment
+{
+    /* background-color: aquamarine; */
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.comment_container
+{
+    background-color: rgb(80, 63, 168);
+    width: max(34%, 400px);
+    height:fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    /* margin-top: 7%; */
+    position: relative;
+    gap: 20px;
+    padding: 20px 0px;
+}
+
+#comment_informations
+{
+    width: 100%;
+    height: 100%;
+    /* background-color: rgb(179, 179, 64); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+}
+
+#comment_image
+{
+    background-color: transparent;
+    max-width: 80%;
+    /* min-height: 40vh; */
+    height: fit-content;
+    overflow: hidden;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#comment_image_img
+{
+    /* width: 100%;
+    height: 100%; */
+}
+
+.comment_content
+{
+    background-color: rgb(85, 119, 119);
+    width: 90%;
+    /* height: calc(85% - 40vh); */
+    /* min-height: 40vh; */
+    height: fit-content;
+}
+
+#comment_background
+{
+    background-color: black;
+    position: absolute;
+    min-width: 100vw;
+    /* height: calc(100% + 42%); */
+    min-height: max(100vh, 100%);
+    /* min-height: 100vh; */
+    z-index: -1;
+    display: none;
+    opacity: 0.5;
+    top: 0;
+    /* left: -100%; */
+
+    /* margin-top: -42%; */
+}
+
+#div_close_comments
+{
+    /* background-color: green; */
+    width: 95%;
+    height:  max(3vw, 45px);
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+#close_comments
+{
+    cursor: pointer;
+    font-size: max(3.3vw, 40px);
+    color: white;
+}
+
+.comment_content_informations
+{
+    /* background-color: beige; */
+    min-height: 6.5vh;
+    height: fit-content;
+    display: flex;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: max(1.5vw, 17px);
+    font-style: italic;
+}
+
+.comment_content_informations p 
+{
+    /* background-color: rgb(128, 128, 174); */
+    display: flex;
+    align-items: center;
+    min-height: 100%;
+    height: fit-content;
+    width: 50%;
+}
+
+.comment_content_informations_numbers
+{
+    /* background-color: rgb(179, 179, 64); */
+    min-height: 100%;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    font-style: normal;
+}
+
+.real_comment
+{
+    /* background-color: rgb(167, 76, 76); */
+    /* height: 80%; */
+    height: fit-content;
+    max-height: 60vh;
+    font-size: max(1.5vw, 20px);
+    overflow: hidden;
+    text-align: justify;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.data
+{
+    /* background-color: orange; */
+    min-height: 100%;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.identificador
+{
+    /* background-color: red; */
+    height: 100%;
+    width: 30%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* JANELA MODAL - JANELA PRA VER O MODAL */
+
+.view_modal
+{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    z-index: 4;
+    top: 0;
+}
+
+/* PRODUTOS - MODAL */
+
+.modal
+{
+    position: relative; /* MUDEI */
+    /* background-color: rgba(176, 176, 255, 1); */
+    background-color: whitesmoke;
+    z-index: 3;
+    width: 70%; /* MUDEI */
+    height: 90%;
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}
+
+.modal_background
+{
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    display: none;
+}
+
+#close_modal
+{
+    width: 98%;
+    text-align: right;
+    color: black;
+    cursor: pointer;
+}
+
+.medicine 
+{
+    height: 90%;
+    width: 98%;
+    display: flex;
+}
+
+#medicine_image
+{
+    /* background-color: green; */
+    height: 96%;
+    width: 40%;
+    background-image: url();
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    border: 2px solid red;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.medicine_informations
+{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.medicine_description
+{
+    margin: auto;
+    height: calc(48% - 10px);
+    width: calc(90% - 20px);
+    text-align: justify;
+    font-size: max(1.2vw, 16px);
+    display: flex;
+    overflow: auto;
+    align-items: center;
+    font-family: sans-serif;
+    line-height: 27px;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    background-color: rgba(113, 113, 253, 1);
+    border-radius: 0px 10px;
+    padding: 10px 10px 0px 10px;
+    color: white;
+}
+
+#medicine_description_p
+{
+    height: 100%;
+    border-radius: 20px;
+}
+
+.medicine_diseases
+{
+    height: 50%;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.medicine_div
+{
+    width: 50%;
+    height: 100%;
+}
+
+.medicine_diseases div span
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25%;
+    font-size: max(1.8vw, 18px);
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    overflow: hidden;
+}
+
+.medicine_diseases hr
+{
+    height: 89%
+}
+
+.medicine_list
+{
+    /* background-color: bisque; */
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.medicine_list ul
+{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.medicine_list li
+{
+    font-size: max(1.4vw, 14px);
+    font-family: sans-serif;
+    text-align: left;
+    color: black;
+    background-color: transparent;
+}
+
+.medicine_list hr
+{
+    background-color: black;
+    height: 80%;
+    width: 2px;
+    margin: 7% auto;
+}
+
+
+.show_up
+{
+    animation: showing 0.4s;
+}
+
+@keyframes showing
+{
+    from
+    {
+        opacity: 0;
+        transform: translateX(0%) translateY(-5%)
+    }
+    to
+    {
+        opacity: 1;
+        transform: translateX(0%) translateY(0%)
+    }
+}
+
+
+
+
+
+
+
+
+/* SECTION4 */
+
+.section4
+{
+    background-color: rgb(174, 178, 255);
+    max-width: 100vw;
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.section4_div
+{
+    min-height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+}
+
+.section4_div_p
+{
+    font-size: max(4vw, 20px);
+    font-family: Poppins;
+    font-weight: bold;
+    /* width: 40%; */
+    width: auto;
+    text-align: right;
+    line-height: 7vw;
+    color: rgb(255, 255, 255);
+    opacity: 0.7.5;
+}
+
+.section4_div_box
+{
+    margin-right: 15%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-family: sans-serif;
+    transform: translate3d(800px, 0px, 0px);
+    opacity: 0;
+    transition: 1.5s ease;
+}
+
+.section4_div_box img
+{
+    width: 100%;
+}
+
+.divButton
+{
+    font-size: max(1.4vw, 14px);
+    width: 200%;
+    height: max(3vw, 6vh);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 44, 44, 1);
+    border-radius: 30px;
+    transform: translate3d(800px, 0px, 0px);
+    transition: 1.5s ease;
+    transition-delay: 0.1.5s;
+    font-weight: bold;
+    color: white;
+    font-family: Poppins;
+}
+
+.divButton a
+{
+    text-decoration: none;
+    color: inherit;
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.animation1
+{
+    transform: translate3d(0px, 0px, 0px);
+    opacity: 1;
+}
+
+
+
+
+#section5
+{
+    max-width: 100vw;
+    height: 80vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0% 3%;
+}
+
+.health
+{
+    height: 100%;
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: max(3vw, 26px);
+    gap: 17%;
+    /* background-color: blue; */
+    text-align: center;
+}
+
+/* .medicine:nth-child(2)
+{
+    background-color: red;
+}
+
+.medicine:nth-child(3)
+{
+    background-color: green;
+} */
+
+.health p
+{
+    width: 100%;
+    /* font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    font-family: Poppins;
+    font-weight: bold;
+    letter-spacing: 10px;
+    color: #d74950;
+}
+
+.health ul
+{
+    /* margin-left: 20%; */
+    margin-top: -10%;
+    width: 100%;
+    /* line-height: 4vw; */
+    font-family: Poppins;
+    font-size: max(2.5vw, 23px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 45%;
+    text-align: center;
+    list-style: none;
+}
+
+.section5_hr
+{
+    background-color: black;
+    margin-bottom: -8%;
+    width: 3px;
+    height: 50%;
+    border: none;
+}
+
+[data-move]
+{
+    transition: 1.2s ease;
+    opacity: 0;
+    transform: translate3d(0px, -80px, 0px);
+}
+
+[data-move].animation2
+{
+    transform: translate3d(0px, 0px, 0px);
+    opacity: 1;
+}
+
+
+footer
+{
+    height: fit-content;
+    display: flex;
+    justify-content: space-around;
+    background-image: linear-gradient(to right, rgb(206, 250, 255), rgb(191, 208, 210));
+    padding: 30px 0px;
+}
+
+footer img
+{
+    width: max(70%, 100px);
+}
+
+footer div
+{
+    width: 20%;
+    /* background-color: antiquewhite; */
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    /* padding-top: 30px; */
+    /* justify-content: center; */
+    margin-right: -3%;
+}
+
+footer div:nth-child(1)
+{
+    align-items: center;
+    justify-content: center;
+    margin-right: 0%;
+}
+
+footer div span
+{
+    font-family: poppins;
+    font-weight: bold;
+    font-size: max(1.6vw, 18px);
+}
+
+footer div ul 
+{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer div ul li
+{
+    font-size: max(1.2vw, 15px);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+footer div ul li a
+{
+    font-size: max(1.2vw, 15px);
+}
+
+footer div ul a
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+footer div ul a
+{
+    margin-top: -10px;
+   font-size: max(1vw, 13px);
+   width: fit-content;
+}
+
+footer div ul a:hover
+{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contraste
+{
+    color: yellow;
+    background-color: black;
+    background-image: none;
+}
+
+.contraste_hr
+{
+    background-color: yellow;
+}
+
+.contraste_darkGray
+{
+    background-color: rgb(146, 146, 146);
+}
+
+.contraste_whiteGray
+{
+    background-color: rgb(226, 226, 226);
+    color: black;
+    /* background-color: rgb(146, 146, 146); */
+}
+
+.contraste_image
+{
+    filter: saturate(0);
+}
+
+.responsivity1
+{
+    flex-direction: column;
+}
+
+.responsivity2
+{
+    width: 100%;
+    height: 50%;
+    flex-direction: row;
+}
+
+.section3_horizontalBar
+{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+/* PEQUENOS AJUSTES */
+
+@media(max-width: 1100px)
+{
+
+    .container_sliders
+    {
+        width: 40vw;
+        height: 60vw;
+        font-size: 2w;
+    }
+
+    .item:nth-child(5), .item:nth-child(6)
+    {
+        display: none;
+    }
+
+    .divButton
+    {
+        width: 100%;
+    }
+
+    .medicine_description
+    {
+        height: calc(95% - 10px);
+        width: calc(50% - 20px);
+        overflow-y: auto;
+        /* background-color: red; */
+    }
+    .medicine_description p
+    {
+        height: 100%;
+    }
+    .section4_div_box
+    {
+        margin-right: 5%;
+    }
+
+    #section5
+    {
+        height: auto;
+        /* background-color: blue; */
+    }
+
+    .section5_hr
+    {
+        height: 35vw;
+    }
+
+    .health
+    {
+        height: 50vw;
+        /* background-color: red; */
+    }
+}
+
+@media(max-width: 800px)
+{
+    #section3
+    {
+        height: 80vw;
+    }
+    .slider_p
+    {
+        font-size: 15px;
+    }
+    .modal
+    {
+        width: 80%;
+    }
+}
+
+
+@media(max-width: 640px)
+{
+    .container_sliders
+    {
+        width: 47%;
+    }
+
+    .section_medicine
+    {
+        height: 7vw;
+    }
+
+    /* #section_medicine_icon
+    {
+        font-size: 7vw;
+    } */
+
+    /* UPAR */
+
+    .modal
+    {
+        width: 90%;
+    }
+
+    #medicine_image
+    {   
+        width: 50%;
+        background-size: auto 100%;
+    }
+
+    .medicine_description
+    {
+        /* background-color: green; */
+        padding: 10px 10px;
+        height: calc(100% - 10px);
+        width: calc(50% - 20px);
+        border-radius: 5px;
+    }
+
+    .medicine_diseases
+    {
+        height: 40%;
+    }
+
+    /* UPAR */
+
+    .section4
+    {
+        height: 60vh;
+    }
+
+    .section4_div
+    {
+        justify-content: center;
+        gap: 10%;
+        height: 60vh;
+    }
+
+    .section4_div_box
+    {
+        height: 77%;
+        margin-right: 0%;
+    }
+
+    .section4_div_box img
+    {
+        width: 70%;
+    }
+
+    .slider img
+    {
+        height: calc(auto - 50%);
+        width: auto;
+    }
+
+    #section5
+    {
+        display: flex;
+        flex-direction: column;
+        height: 90vh;
+        /* padding: 5% 0%; */
+    }
+
+    .section5_hr
+    {
+        width: 100%;
+        height: 4px;
+        margin: 0;
+    }
+
+    .health
+    {
+        display: flex;
+        gap: 7%;
+        padding: 5% 0%;
+    }
+
+    .health p
+    {
+        text-align: justify;
+        padding-left: 5%;
+        /* background-color: red; */
+        display: flex;
+        align-items: center;
+        height: 20%;
+    }
+
+    .health ul
+    {
+        list-style: disc;
+        margin-top: 0%;
+        height: 70%;
+        padding-left: 20%;
+        align-items: first baseline;
+        /* background-color: blue; */
+    }
+}
+
+@media(max-width: 600px)
+{
+    .slider_p
+    {
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 5vw;
+        /* background-color: red; */
+    }
+}
+
+
+
+
+
+
+
+/* PRA FAZER A PARTE DE CELULAR COM OS MODAIS, É SÕ REAJUSTAR O TAMANHO DO "WINDOW" OU DO "container_sliders" E DEPOIS AJUSTAR O TAMANHO DA IMAGEM DO REMÉDIO */
+
+@media(max-width: 500px)
+{
+    header ul
+    {
+        width: fit-content;
+        min-width: fit-content;
+    }
+
+    .hidden
+    {
+        display: none;
+    }
+
+    .pages
+    {
+        display: none;
+    }
+
+    #section2
+    {
+        margin: 7vw 0vw;
+        margin-top: 20vw;
+        height: 20vh;
+        background-color: transparent;
+    }
+
+    .container_text
+    {
+        height: auto;
+        width: 95%;
+        background-color: transparent;
+    }
+
+    .container_text_p
+    {
+        font-size: 22px;
+    }
+
+    .section_medicine
+    {
+        width: calc(90% - 3.3vw);
+        height: auto;
+        margin: 20% auto;
+        padding: 2vw 2vw;
+    }
+    
+    .modal
+    {
+        width: 90%;
+    }
+
+    #medicine_search
+    {
+        background-color: whitesmoke;
+        padding: 2vw 3vw;
+        width: calc(95% - 5vw);
+        height: 90%;
+        border: none;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: max(1.5vw, 18px);
+        cursor: pointer;
+    } 
+
+    /* #section_medicine_icon
+    {
+        border-radius: 0%;
+        font-size: 7vh;
+    } */
+
+    .section3_horizontalBar
+    {
+        width: 100%;
+        height: 100%;
+        overflow-x: scroll;
+        display: flex;
+        /* justify-content: center; */
+        /* background-color: red; */
+    }
+
+    #section3
+    {
+        height: 80vh;
+    }
+
+    .container_sliders
+    {
+        width: 67%;
+        height: 100%;
+    }
+
+    .container_sliders_window
+    {
+        overflow: hidden;
+        left: 0;
+        gap: 100px;
+    }
+
+    .slider
+    {
+        width: 14%;
+    }
+
+    .slider_p
+    {
+        font-size: 30px;
+    }
+
+    .comments
+    {
+        gap: 10px;
+    }
+
+    .arrow
+    {
+        display: none;
+    }
+
+    .section4
+    {
+        height: 80vh;
+    }
+    .section4_div
+    {
+        height: 100%;
+        flex-direction: column;
+        padding: 10% 0%;
+    }
+
+    .section4_div_p
+    {
+        width: 80%;
+        text-align: center;
+    }
+
+    .health p
+    {
+        font-size: 25px;
+        padding: 0%;
+        margin-left: -15%;
+    }
+
+    .health ul
+    {
+        width: 90%;
+        font-size: 18px;
+    }
+
+    .view_modal
+    {
+        /* height: 110%;
+        width: 85%; */
+        height: 100%;
+        width: 100%;
+    }
+
+    .medicine_diseases
+    {
+        display: none;
+    }
+
+    .medicine_description
+    {
+        height: 40%;
+        width: 90%;
+        position: relative;
+        /* padding: 0% 2.5%; */
+    }
+
+    .medicine_informations
+    {
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    #medicine_image
+    {
+        width: 80%;
+        height: 55%
+    }
+       
+    footer
+    {
+        flex-direction: column;
+        align-items: center;
+        height: fit-content;
+        padding: 25px 0px;
+    }
+
+    footer img
+    {
+        width: 100px;
+    }
+    
+    footer div
+    {
+        padding: 20px;
+        margin-right: 0%;
+        width: 80%;
+        align-items: center;
+        gap: 27px;
+    }
+
+    footer div ul
+    {
+        display: none;
+    }
+
+    footer div ul li
+    {
+        text-align: center;
+    }
+
+    footer div ul a
+    {
+        margin: auto
+    }
+}

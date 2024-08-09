@@ -1,0 +1,51 @@
+Links para o inter de PW
+
+Site da Drogaria - https://www.drogaraia.com.br/rexona-desodorante-creme-clinical-soft-solid-woman-48g.html
+
+Saude Petobrar - https://saudepetrobras.com.br/
+
+Calculadora de IMC - https://www.tuasaude.com/calculadora/imc/20/60/1.60/H/
+
+Catálogo de APIs governamentais - https://www.gov.br/conecta/catalogo/
+
+Acesso a Carteirinha de vacinação on-line - https://www.gov.br/pt-br/plano-transformacao-digital/acesso-digital-ao-servico-carteira-de-vacinacao
+
+Calendário de vacinação - https://th.bing.com/th/id/R.1e9e4fa0dc37a276721613b388e8578a?rik=kzxMwbdqidg3QA&pid=ImgRaw&r=0
+
+Site com muitas informações gerais do sus - https://opendatasus.saude.gov.br/
+
+Site com banco de dados sobre diferentes tipos de doenças causadas por vírus - https://www.prefeitura.sp.gov.br/cidade/secretarias/saude/tabnet/index.php?p=9274
+
+Site com banco de dados sobre diferentes tipos de vacinas e suas informações (mas não possui o dado de quem tomou ou nao tomou detalhadamente) - https://www.prefeitura.sp.gov.br/cidade/secretarias/saude/tabnet/index.php?p=9274
+
+Site que fala os tipos de vacina por faixa etária - https://conectesus-paciente.saude.gov.br/publico/cartilha-vacinas
+
+Site com o calendário vacinal de todas as faixas etárias - https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/c/calendario-nacional-de-vacinacao
+
+Site com acesso a dados de doses aplicadas da COVID - https://servicos-datasus.saude.gov.br/detalhe/CddynnsgE2
+
+Site que fornece os dados de doses aplicadas (algumas são só da COVID, e parece que tem que pedir altorização) - https://servicos-datasus.saude.gov.br/
+
+Site de saúde do governo - https://www.gov.br/saude/pt-br/assuntos
+
+Site de registro de imunizações - https://www.gov.br/pt-br/apps/e-sus-vacinacao
+
+Registros de vacinação da COVID - https://opendatasus.saude.gov.br/dataset/covid-19-vacinacao/resource/82743aa8-a77a-40d4-9bb6-6a733c5e57ee
+
+Site com API de cadastros de estabelecimentos de saúde - https://opendatasus.saude.gov.br/dataset?res_format=api
+
+~~~~~~~~~LINKS PRA IMPLEMENTAÇÃO DA API~~~~~~~~~~
+
+https://datasus.saude.gov.br/wp-content/uploads/2022/02/Manual-de-Utilizacao-da-API-e-Sus-Notifica.pdf
+https://www.youtube.com/watch?v=nKsM1sog1wI
+https://servicos-datasus.saude.gov.br/detalhe/hurhe1VDGP
+
+~~~~~~~~~SCRIPT~~~~~~~~~~
+
+cd Cursos_e_projetos
+cd Cursos
+cd Curso_de_JavaScript
+cd Node
+cd Projeto_5_API
+
+https://conradoec.github.io/Trabalho_do_Inter/forms/logout.php

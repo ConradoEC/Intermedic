@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+        <link rel="stylesheet" href="style.css">
+        <title>Intermedic | Vacinação</title>
+    </head>
+
+    <body data-backgrounds="backgrounds"> 
+
+        <section id="section1">
+            <header data-backgrounds="backgrounds">
+                <a href="http://localhost/Trabalho_do_Inter/"><img data-backgroundImage="backgrounds_image" src="https://i.im.ge/2023/10/06/NBepR1.image-removebg-preview.png"></a>
+
+                <ul id="menu" data-backgrounds="backgrounds">
+                    <li class="item hidden data-font" id="decreaseSize">-A</li>
+                    <li class="item hidden data-font" id="normalSize">A</li>
+                    <li class="item hidden data-font" id="increaseSize">+A</li>
+                    <li class="item hidden" id="btnContraste"><span class="material-symbols-outlined data-font">clock_loader_80</span>
+                    </li>
+                    <li class="item hidden data-font"><a class="lastNotices"  href="http://localhost/Trabalho_do_Inter/">Últimas notícias</a></li>
+                    <li class="item hidden"><a href="./forms" class="header_links"><span id="Login" class="data-font">Login</span><span id="perfil" class="material-symbols-outlined data-font">account_circle</span></a></li>
+                    <!-- <li class="item"></li> -->
+                    <li class="item"><span id="menu_button" class="material-symbols-outlined">menu</span></li>
+                </ul>
+
+                <div id="menuSide_back"></div>
+                
+                <div id="menuSide">
+                    <div id="menuSide_close"></div>
+                    <ul id="menuSide_ul">
+                        <li class="menuSide_ul_li_perfil">
+                            <div class="menuSide_ul_perfil">
+                                <div class="img_div"></div>
+                                <div class="menuSide_ul_li_text">
+                                    <span id="menuSide_span">Faça login</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="menuSide_li"><a href="http://localhost/Trabalho_do_Inter/"><span class="material-symbols-outlined">home</span>Página principal</a></li>
+                        <li class="menuSide_li"><a href="http://localhost/Trabalho_do_inter/vacinacao"><span class="material-symbols-outlined">wallet</span>Carteira de Vacinação</a></li>
+                        <li class="menuSide_li"><a href="http://localhost/Trabalho_do_Inter/pagina_dos_remedios"><span class="material-symbols-outlined">mixture_med</span>Remédios</a></li>
+                        <li class="menuSide_li"><a href="http://localhost/Trabalho_do_Inter/pagina_das_doencas"><span class="material-symbols-outlined">coronavirus</span>Doenças/sintomas</a></li>
+                        <li class="menuSide_li"><a href="http://localhost/Trabalho_do_Inter/forms/index.php"><span class="material-symbols-outlined" id="menuSide_li_login_or_logout">account_circle</span><span id="menuSide_li_login_or_logout_text">Login</span></a></li>
+                    </ul>
+                </div>
+            </header>
+
+            <ul class="pages data-font" data-backgrounds="backgrounds">
+                <li class="page"><a href="http://localhost/Trabalho_do_Inter/pagina_dos_remedios/" class="pages_a">Remédios</a></li>
+                <li class="page"><a href="http://localhost/Trabalho_do_Inter/pagina_das_doencas/" class="pages_a">Doenças/sintomas</a></li>
+                <li class="page"><a href="http://localhost/Trabalho_do_Inter/forms/forms-cadastro/cadastro.html" class="pages_a">Cadastro</a></li>
+                <li class="page"><a href="http://localhost/Trabalho_do_Inter/vacinacao/" class="pages_a">Vacinação</a></li>
+            </ul>
+
+        </section>
+
+        <section id="section2">
+            <div id="slider" class="slider">
+
+                <div id="slider_view" class="slider_view">
+                    <div id="slider_container" class="slider_container">
+                        <div id="slider_img1" class="slider_img" data-backgroundImage="backgrounds_image"></div>
+                        <div id="slider_img2" class="slider_img" data-backgroundImage="backgrounds_image"></div>
+                        <div id="slider_img3" class="slider_img" data-backgroundImage="backgrounds_image"></div>
+                        <div id="slider_img4" class="slider_img" data-backgroundImage="backgrounds_image"></div>
+                        <div id="slider_img5" class="slider_img" data-backgroundImage="backgrounds_image"></div>
+                    </div>
+
+                    <div id="manual_navigation" class="manual_navigation">
+                        <input type="radio" name="radio_btn" id="radio_btn1" checked>
+                        <input type="radio" name="radio_btn" id="radio_btn2">
+                        <input type="radio" name="radio_btn" id="radio_btn3">
+                        <input type="radio" name="radio_btn" id="radio_btn4">
+                        <input type="radio" name="radio_btn" id="radio_btn5">
+
+                        <label data-background_yellow="backgrounds_yellow" for="radio_btn1" id="radio_label1" class="radio_label"></label>
+                        <label data-background_yellow="backgrounds_yellow" for="radio_btn2" id="radio_label2" class="radio_label"></label>
+                        <label data-background_yellow="backgrounds_yellow" for="radio_btn3" id="radio_label3" class="radio_label"></label>
+                        <label data-background_yellow="backgrounds_yellow" for="radio_btn4" id="radio_label4" class="radio_label"></label>
+                        <label data-background_yellow="backgrounds_yellow" for="radio_btn5" id="radio_label5" class="radio_label"></label>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </section>
+
+        <section id="alert">
+            <p class="container_text_p data-font" data-backgrounds="backgrounds">As vacinas abaixo estão disponíveis para até <span id="faixaEtaria">0</span> anos.</p>
+        </section>
+
+        <section id="section3">
+            <div class="vaccination_card">
+                <select id="vaccination_selector">
+                    <option selected value="">Todos</option>
+                    <option>Dose</option>
+                    <option>Doses</option>
+                    <option>Reforço</option>
+                    <option>Anual</option>
+                </select>
+
+                <div class="vaccination_card_horizontalBar" data-backgrounds_whiteGray="backgrounds_whiteGray">
+                    <div id="vaccination_card_view" class="vaccination_card_view">
+
+                        <!-- <div class="vaccine_card">
+                            <label for="vaccine_card_box1" class="vaccine_card_box_label">NOME</label>
+                            <input type="text" value="" id="vaccine_card_box1" class="vaccine_card_box" disabled>
+                            <label for="vaccine_card_box2" class="vaccine_card_box_label">DATA DE VACINAÇÃO</label>
+                            <input type="text" value="" id="vaccine_card_box2" class="vaccine_card_box" disabled>
+                            <label for="vaccine_card_box3" class="vaccine_card_box_label">DOSE/DOSES</label>
+                            <input type="text" value="1" id="vaccine_card_box3" class="vaccine_card_box" disabled>
+                            <label for="vaccine_card_box4" class="vaccine_card_box_label">REFORÇO</label>
+                            <input type="text" value="Não possui" id="vaccine_card_box4" class="vaccine_card_box" disabled>
+                            <label for="vaccine_card_box5" class="vaccine_card_box_label">ANUAL</label>
+                            <input type="text" value="Não Tomou" id="vaccine_card_box5" class="vaccine_card_box" disabled>
+                        </div> -->
+
+                    </div>
+                </div>
+            </div>
+
+            <div id="vaccination_grade" class="vaccination_grade" data-backgrounds_whiteGray="backgrounds_whiteGray"></div>
+
+            <!-- <div id="vaccination_grade" class="vaccination_grade" data-backgrounds_whiteGray="backgrounds_whiteGray">
+                
+                <div class="vaccination_grade_box">
+                    <p id="vaccination_grade_box_p">Poliomielite</p>
+                </div>
+
+            </div> -->
+
+            <div id="vaccination_card" class="vaccination_card">
+                <span class="material-symbols-outlined vaccination_card_close">close</span>
+                <div id="vaccination_card_background"></div>
+                <!-- <div class="vaccine_card_update">
+                    <label for="vaccine_card_box1" class="vaccine_card_box_label">NOME</label>
+                    <input type="text" value="" id="vaccine_card_box1" class="vaccine_card_box" disabled>
+                    <label for="vaccine_card_box2" class="vaccine_card_box_label">DATA DE VACINAÇÃO</label>
+                    <input type="text" value="" id="vaccine_card_box2" class="vaccine_card_box" disabled>
+                    <label for="vaccine_card_box3" class="vaccine_card_box_label">DOSE/DOSES</label>
+                    <input type="text" value="1" id="vaccine_card_box3" class="vaccine_card_box" disabled>
+                    <label for="vaccine_card_box4" class="vaccine_card_box_label">REFORÇO</label>
+                    <input type="text" value="Não possui" id="vaccine_card_box4" class="vaccine_card_box" disabled>
+                    <label for="vaccine_card_box5" class="vaccine_card_box_label">ANUAL</label>
+                    <input type="text" value="Não Tomou" id="vaccine_card_box5" class="vaccine_card_box" disabled>
+                </div> -->
+
+                
+
+            </div>
+        </section>
+
+        <section class="titles" id="title_section2" data-backgrounds_darkGray="backgrounds_darkGray">
+            <div class="titles_div">
+                <img data-backgroundImage="backgrounds_image" class="img-title3 img_border" src="https://i.im.ge/2023/08/19/m2MZl6.image.png" alt="">
+                <img data-backgroundImage="backgrounds_image" class="img-title2 img_border" src="https://i.im.ge/2023/08/19/m2MOhK.image.png" alt="">
+                <img data-backgroundImage="backgrounds_image" class="img-title1 img_border" src="https://i.im.ge/2023/08/19/m2M71Y.image.png" alt="">
+            </div>
+
+            <div class="titles_div">
+                <p class="titles_p data-font">Não tenha vergonha, <br> <a id="titles_p_link" href="http://localhost/Trabalho_do_Inter/pagina_das_doencas">saiba mais</a> e trate-se!</p>
+            </div>
+        </section>
+        
+        <footer id="footer" data-backgrounds="backgrounds">
+
+            <div><img data-backgroundImage="backgrounds_image" src="https://i.im.ge/2023/10/06/NBepR1.image-removebg-preview.png" alt=""></div>
+
+            <div>
+                <span id="footer_first_span" class="data-font">Mapa do site</span>
+
+                <ul id="footer_first_ul">
+                    <li>
+                        <a href="http://localhost/Trabalho_do_inter" class="data-font">Home</a>
+                    </li>
+                    <li>
+                        <a href="http://localhost/Trabalho_do_Inter/pagina_dos_remedios/" class="data-font">Remédios</a>
+                    </li>
+                    <li>
+                        <a href="http://localhost/Trabalho_do_Inter/pagina_das_doencas/" class="data-font">Doenças/sintomas</a>
+                    </li>
+                    <li>
+                        <a href="http://localhost/Trabalho_do_Inter/forms/forms-cadastro/cadastro.html" class="data-font">Cadastro</a>
+                    </li>
+                    <li>
+                        <a href="http://localhost/Trabalho_do_Inter/vacinacao/" class="data-font">Caderneta de vacinação</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <span id="footer_second_span" class="data-font">Integrantes</span>
+                <ul id="footer_second_ul">
+                    <li class="data-font">Erick Conrado Almeida da Silva</li>
+                    <a href="" class="data-font">Meu Linkedin</a>
+                    <li class="data-font">Evellyn</li>
+                    <a href="" class="data-font">Meu Linkedin</a>
+                    <li class="data-font">Bia</li>
+                    <a href="" class="data-font">Meu Linkedin</a>
+                    <li class="data-font">Alexia</li>
+                    <a href="" class="data-font">Meu Linkedin</a>
+                    <li class="data-font">Italo Monteiro Lopes</li>
+                    <a href="" class="data-font">Meu Linkedin</a>
+                </ul>
+            </div>
+
+            <div>
+                <span id="footer_third_span" class="data-font">Orientadores</span>
+                <ul id="footer_third_ul">
+                    <li class="data-font">Ivan Souza</li>
+                    <li class="data-font">Wesley Castanha de Lima</li>
+                </ul>
+            </div>
+
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+
+</html>

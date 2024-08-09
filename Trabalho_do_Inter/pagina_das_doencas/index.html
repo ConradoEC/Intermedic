@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+        <title>Intermedic | Doenças-Sintomas</title>
+    </head>
+    <body data-backgrounds="backgrounds">
+        <section id="section1">
+            <header data-backgrounds="backgrounds">
+                <a href="http://localhost/Trabalho_do_Inter/"><img src="https://i.im.ge/2023/10/06/NBepR1.image-removebg-preview.png"></a>
+                
+                <ul id="menu">
+                    <li class="item hidden data-font" id="decreaseSize">-A</li>
+                    <li class="item hidden data-font" id="normalSize">A</li>
+                    <li class="item hidden data-font" id="increaseSize">+A</li>
+                    <li class="item hidden" id="btnContraste"><span class="material-symbols-outlined data-font">clock_loader_80</span></li>
+                    <li class="item hidden data-font"><a class="lastNotices"  href="http://localhost/Trabalho_do_Inter/">Últimas notícias</a></li>
+                    <li class="item hidden"><a href="https://conradoec.github.io/Trabalho_do_Inter/forms" class="header_links"><span id="Login" class="data-font">Login</span><span id="perfil" class="material-symbols-outlined data-font">account_circle</span></a></li>
+                    <!-- <li class="item"></li> -->
+                    <li class="item"><span id="menu_button" class="material-symbols-outlined">menu</span></li>
+                </ul>
+
+                <div id="menuSide_back"></div>
+                
+                <div id="menuSide">
+                    <div id="menuSide_close"></div>
+                    <ul id="menuSide_ul">
+                        <li class="menuSide_ul_li_perfil">
+                            <div class="menuSide_ul_perfil">
+                                <div class="img_div"></div>
+                                <div class="menuSide_ul_li_text">
+                                    <span id="menuSide_span">Faça login</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="menuSide_li"><a href="http://localhost/Trabalho_do_Inter/"><span class="material-symbols-outlined">home</span>Página principal</a></li>
+                        <li class="menuSide_li"><a href="http://localhost/Trabalho_do_Inter/Vacinacao"><span class="material-symbols-outlined">wallet</span>Carteira de Vacinação</a></li>
+                        <li class="menuSide_li"><a href="http://localhost/Trabalho_do_Inter/pagina_dos_remedios"><span class="material-symbols-outlined">mixture_med</span>Remédios</a></li>
+                        <li class="menuSide_li"><a href="http://localhost/Trabalho_do_Inter/pagina_das_doencas"><span class="material-symbols-outlined">coronavirus</span>Doenças/sintomas</a></li>
+                        <li class="menuSide_li"><a href="http://localhost/Trabalho_do_Inter/forms/index.php"><span class="material-symbols-outlined" id="menuSide_li_login_or_logout">account_circle</span><span id="menuSide_li_login_or_logout_text" style="font-size: inherit">Login</span></a></li>
+                    </ul>
+                </div>
+            </header>
+
+            <ul class="pages data-font" data-backgrounds="backgrounds">
+                <li class="page"><a href="http://localhost/Trabalho_do_Inter/pagina_dos_remedios/" class="pages_a">Remédios</a></li>
+                <li class="page"><a href="http://localhost/Trabalho_do_Inter/pagina_das_doencas/" class="pages_a">Doenças/sintomas</a></li>
+                <li class="page"><a href="http://localhost/Trabalho_do_Inter/forms/forms-cadastro/cadastro.html" class="pages_a">Cadastro</a></li>
+                <li class="page"><a href="http://localhost/Trabalho_do_Inter/vacinacao/" class="pages_a">Vacinação</a></li>
+            </ul>
+
+            <div id="content_header" data-backgroundImage="backgrounds_image">
+                <div id="text-principal">
+                    <h1 class="phrase_principal data-font">Quais sintomas você está sentindo?</h1>
+                </div>
+                
+                <div data-backgrounds_darkGray="backgrounds_darkGray" class="search_space" id="search_space">
+                    <div class="search-box" id="search-box">
+                        <input type="text" class="search-text data-font" id="search_text" placeholder="Pesquisar..." onkeyup="filtrar()">
+                        <a class="search-btn">
+                            <img data-backgroundImage="backgrounds_image" class="loupe-red" id="loupe-red" src="https://i.im.ge/2023/08/18/m18CYK.image-removebg-preview-4.png" alt="">
+                        </a>
+                    </div>
+    
+                    <div data-backgrounds_darkGray="backgrounds_darkGray" class="mini_search_space" id="mini_search_space">
+                        <!-- <a class="mini_search_space_link" href="./doenças/index.html">
+                            <div class="mini_search_space_div">
+                                <span class="mini_search_space_div_span">Poliomielite</span>
+                            </div>
+                        </a> -->
+                    </div>
+                </div>
+            </div>
+
+            <section class="section2" data-backgrounds="backgrounds">
+                <div class="medicine">
+                    <img data-backgroundImage="backgrounds_image" src="https://i.im.ge/2023/10/05/NJqjPm.image-removebg-preview-9.png" alt="" class="medicine_img">
+                    <a href="http://localhost/Trabalho_do_Inter/pagina_dos_remedios"><h1 class="medicine_title">Saiba mais</h1></a>
+                    <p class="medicine_text data-font">"E até em pó para ser preparado com a mistura..."</p>
+                </div>
+
+                <div class="medicine">
+                    <img data-backgroundImage="backgrounds_image" src="https://i.im.ge/2023/11/27/CQJae4.image-removebg-preview.png" alt="" class="medicine_img">
+                    <a href="http://localhost/Trabalho_do_Inter/pagina_dos_remedios"><h1 class="medicine_title data-font">Saiba mais</h1></a>
+                    <p class="medicine_text data-font">"O remédio pode causar alguns efeitos colaterais..."</p>
+                </div>
+
+                <div class="medicine">
+                    <img data-backgroundImage="backgrounds_image" src="https://i.im.ge/2023/11/28/CSKOg1.image-removebg-preview-1.png" alt="" class="medicine_img">
+                    <a href="http://localhost/Trabalho_do_Inter/pagina_dos_remedios"><h1 class="medicine_title data-font">Saiba mais</h1></a>
+                    <p class="medicine_text data-font">"O inicio da ação ocorre a partir de 30 minutos..."</p>
+                </div>
+            </section>
+
+            <div id="block_text" data-backgroundImage="backgrounds_image">
+                <h1 id="title_text" class="data-font"> Como combater as Ist's?</h1>
+                <p class="phrase-text data-font">As Infecções Sexualmente Transmissíveis (ISTs), anteriormente chamadas de Doenças Sexualmente Transmissíveis (DSTs), compreendem um grupo diversificado de infecções causadas por vírus, bactérias, parasitas ou fungos que são transmitidos, principalmente, através do contato sexual desprotegido com uma pessoa infectada. Estas infecções podem afetar qualquer pessoa, independentemente de idade, gênero ou orientação sexual. Entre as ISTs mais comuns estão a clamídia, gonorreia, sífilis, herpes genital, HIV/AIDS, HPV (papilomavírus humano) e hepatite B, dentre outras. Cada uma possui sintomas distintos, variando desde infecções assintomáticas até manifestações mais graves que podem resultar em complicações de saúde se não forem tratadas adequadamente. É fundamental enfatizar a importância da prevenção e do cuidado. Praticar sexo seguro, utilizando preservativos, é uma das formas mais eficazes de reduzir o risco de contrair ISTs. Além disso, a realização periódica de exames médicos é crucial para detectar precocemente qualquer infecção, permitindo um tratamento adequado e a prevenção de complicações.</p>
+            </div>
+           
+            <div class="background-ocean" data-backgrounds="backgrounds">        
+                <div class="wrapper">
+                    <i id="left" class="fa-solid fa-angle-left">
+                        <img data-backgroundImage="backgrounds_image" class="img-angle-left" src="https://i.im.ge/2023/09/04/wAV3f0.image.png" alt="Seta para a direita">
+                    </i>
+
+                    <p class="sugestion-text data-font"> Saiba sobre outras doenças!</p>
+
+                    <ul class="carousel">
+                        <li class="card">
+                            <a href="http://localhost/Trabalho_do_Inter/pagina_das_doencas/">
+                                <div class="img"><img data-backgroundImage="backgrounds_image" src="https://i.im.ge/2023/12/01/CCxt90.image.png" alt="img" draggable="false"></div>
+                            </a>
+                        </li>
+
+                        <li class="card">
+                            <a href="http://localhost/Trabalho_do_inter/pagina_das_doencas/doencas/index.html?id=8">
+                                <div class="img"><img data-backgroundImage="backgrounds_image" src="https://i.im.ge/2023/11/29/CDJwDY.image.png" alt="img" draggable="false"></div>
+                            </a>
+                        </li>
+                        
+                        <li class="card">
+                            <a href="http://localhost/Trabalho_do_Inter/pagina_das_doencas/">
+                                <div class="img"><img data-backgroundImage="backgrounds_image" src="https://i.im.ge/2023/11/29/CDBgxM.image.png" alt="img" draggable="false"></div>
+                            </a>
+                        </li>
+
+                        <li class="card">
+                            <a href="http://localhost/Trabalho_do_inter/pagina_das_doencas/doencas/index.html?id=6">
+                                <div class="img"><img data-backgroundImage="backgrounds_image" src="https://i.im.ge/2023/11/29/CDGZ4J.image.png" alt="img" draggable="false"></div>
+                            </a>
+                        </li>
+
+                        <li class="card">
+                            <a href="http://localhost/Trabalho_do_Inter/pagina_das_doencas/">
+                                <div class="img"><img data-backgroundImage="backgrounds_image" src="https://i.im.ge/2023/11/29/CIQU4a.image.png" alt="img" draggable="false"></div>
+                            </a>
+                        </li>
+
+                        <li class="card">
+                            <a href="http://localhost/Trabalho_do_Inter/pagina_das_doencas/">
+                                <div class="img"><img data-backgroundImage="backgrounds_image" src="https://i.im.ge/2023/11/29/CITRKz.image.png" alt="img" draggable="false"></div>
+                            </a>
+                        </li>
+                    </ul>
+                
+                    <i id="right" class="fa-solid fa-angle-right">
+                        <img data-backgroundImage="backgrounds_image" class="img-angle-right" src="https://i.im.ge/2023/09/04/wAkmGP.image.png" alt="Seta para a esquerda">
+                    </i>
+                </div>
+            </div>
+        </section>
+
+        <footer id="footer" data-backgrounds="backgrounds">
+
+            <div><img data-backgroundImage="backgrounds_image" src="https://i.im.ge/2023/10/06/NBepR1.image-removebg-preview.png" alt=""></div>
+
+            <div>
+                <span id="footer_first_span" class="data-font">Mapa do site</span>
+
+                <ul id="footer_first_ul">
+                    <li>
+                        <a href="http://localhost/Trabalho_do_inter" class="data-font">Home</a>
+                    </li>
+                    <li>
+                        <a href="http://localhost/Trabalho_do_Inter/pagina_dos_remedios/" class="data-font">Remédios</a>
+                    </li>
+                    <li>
+                        <a href="http://localhost/Trabalho_do_Inter/pagina_das_doencas/" class="data-font">Doenças/sintomas</a>
+                    </li>
+                    <li>
+                        <a href="http://localhost/Trabalho_do_Inter/forms/forms-cadastro/cadastro.html" class="data-font">Cadastro</a>
+                    </li>
+                    <li>
+                        <a href="http://localhost/Trabalho_do_Inter/vacinacao/" class="data-font">Caderneta de vacinação</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <span id="footer_second_span" class="data-font">Integrantes</span>
+                <ul id="footer_second_ul">
+                    <li class="data-font">Erick Conrado Almeida da Silva</li>
+                    <a href="" class="data-font">Meu Linkedin</a>
+                    <li class="data-font">Evellyn</li>
+                    <a href="" class="data-font">Meu Linkedin</a>
+                    <li class="data-font">Bia</li>
+                    <a href="" class="data-font">Meu Linkedin</a>
+                    <li class="data-font">Alexia</li>
+                    <a href="" class="data-font">Meu Linkedin</a>
+                    <li class="data-font">Italo Monteiro Lopes</li>
+                    <a href="" class="data-font">Meu Linkedin</a>
+                </ul>
+            </div>
+
+            <div>
+                <span id="footer_third_span" class="data-font">Orientadores</span>
+                <ul id="footer_third_ul">
+                    <li class="data-font">Ivan Souza</li>
+                    <li class="data-font">Wesley Castanha de Lima</li>
+                </ul>
+            </div>
+        </footer>
+     </body>
+</html>

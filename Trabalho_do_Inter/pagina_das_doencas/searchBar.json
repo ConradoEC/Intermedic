@@ -1,0 +1,97 @@
+[
+    {
+        "id": "1",
+        "content": 
+        {
+            "name": "Poliomielite"
+        }
+    },
+
+    {
+        "id": "2",
+        "content": 
+        {
+            "name": "Gripe Suína"
+        }
+    },
+
+    {
+        "id": "3",
+        "content": 
+        {
+            "name": "Enxaqueca"
+        }
+    },
+
+    {
+        "id": "4",
+        "content": 
+        {
+            "name": "Dengue"
+        }
+    },
+
+    {
+        "id": "5",
+        "content": 
+        {
+            "name": "Osteoporose"
+        }
+    },
+
+    {
+        "id": "6",
+        "content": 
+        {
+            "name": "HIV"
+        }
+    },
+
+    {
+        "id": "7",
+        "content": 
+        {
+            "name": "Colesterol alto"
+        }
+    },
+
+    {
+        "id": "8",
+        "content": 
+        {
+            "name": "Herpes"
+        }
+    },
+
+    {
+        "id": "9",
+        "content": 
+        {
+            "name": "Refluxo gastroesofágico"
+        }
+    },
+
+    {
+        "id": "10",
+        "content": 
+        {
+            "name": "Covid-19"
+        }
+    },
+
+    {
+        "id": "11",
+        "content": 
+        {
+            "name": "Diabetes"
+        }
+    },
+
+    {
+        "id": "12",
+        "content": 
+        {
+            "name": "Pneumonia"
+        }
+    }
+]

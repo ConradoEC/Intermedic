@@ -1,0 +1,17 @@
+const url = 'https://node-api-0bwb.onrender.com/bd';
+const newUrl = 'https://jsonplaceholder.typicode.com/posts';
+
+// fetch('https://fakestoreapi.com/products?limit=5')
+
+async function idk()
+{
+    const response =  await fetch(url)
+    const response2 =  await fetch(newUrl)
+
+    console.log(response.json())
+    console.log(response2.json())
+
+    // const newResponse = await response.json()
+
+    // console.log(newResponse)
+}

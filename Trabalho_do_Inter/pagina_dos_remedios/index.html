@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+        <link rel="stylesheet" href="style.css">
+        <title>Intermedic | Remédios</title>
+    </head>
+    <body data-backgrounds="backgrounds">
+
+        <section id="section1">
+            <header data-backgrounds="backgrounds">
+                <a href="http://localhost/Trabalho_do_Inter/"><img data-backgroundImage="backgrounds_image" src="https://i.im.ge/2023/10/06/NBepR1.image-removebg-preview.png"></a>
+                
+                <ul id="menu" data-backgrounds="backgrounds">
+                    <li class="item hidden data-font" id="decreaseSize">-A</li>
+                    <li class="item hidden data-font" id="normalSize">A</li>
+                    <li class="item hidden data-font" id="increaseSize">+A</li>
+                    <li class="item hidden" id="btnContraste"><span class="material-symbols-outlined data-font data-font">clock_loader_80</span></li>
+                    <li class="item hidden data-font"><a class="lastNotices"  href="http://localhost/Trabalho_do_Inter/">Últimas notícias</a></li>
+                    <li class="item hidden"><a href="https://conradoec.github.io/Trabalho_do_Inter/forms" class="header_links"><span id="Login" class="data-font">Login</span><span id="perfil" class="material-symbols-outlined data-font">account_circle</span></a></li>
+                    <!-- <li class="item"></li> -->
+                    <li class="item"><span id="menu_button" class="material-symbols-outlined">menu</span></li>
+                </ul>
+
+                <div id="menuSide_back"></div>
+                <div id="menuSide">
+                    <div id="menuSide_close"></div>
+                    <ul id="menuSide_ul">
+                        <li class="menuSide_ul_li_perfil">
+                            <div class="menuSide_ul_perfil">
+                                <div class="img_div"></div>
+                                <div class="menuSide_ul_li_text">
+                                    <span id="menuSide_span">Faça login</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="menuSide_li"><a href="http://localhost/Trabalho_do_Inter/"><span class="material-symbols-outlined">home</span>Página principal</a></li>
+                        <li class="menuSide_li"><a href="http://localhost/Trabalho_do_Inter/Vacinacao"><span class="material-symbols-outlined">wallet</span>Carteira de Vacinação</a></li>
+                        <li class="menuSide_li"><a href="http://localhost/Trabalho_do_Inter/pagina_dos_remedios"><span class="material-symbols-outlined">mixture_med</span>Remédios</a></li>
+                        <li class="menuSide_li"><a href="http://localhost/Trabalho_do_Inter/pagina_das_doencas"><span class="material-symbols-outlined">coronavirus</span>Doenças/sintomas</a></li>
+                        <li class="menuSide_li"><a href="http://localhost/Trabalho_do_Inter/forms/index.php"><span class="material-symbols-outlined" id="menuSide_li_login_or_logout">account_circle</span><span id="menuSide_li_login_or_logout_text">Login</span></a></li>
+                    </ul>
+                </div>
+            </header>
+
+            <ul class="pages data-font" data-backgrounds="backgrounds">
+                <li class="page"><a href="http://localhost/Trabalho_do_Inter/pagina_dos_remedios/" class="pages_a">Remédios</a></li>
+                <li class="page"><a href="http://localhost/Trabalho_do_Inter/pagina_das_doencas/" class="pages_a">Doenças/sintomas</a></li>
+                <li class="page"><a href="http://localhost/Trabalho_do_Inter/forms/forms-cadastro/cadastro.html" class="pages_a">Cadastro</a></li>
+                <li class="page"><a href="http://localhost/Trabalho_do_Inter/vacinacao/" class="pages_a">Vacinação</a></li>
+            </ul>
+            
+        </section>
+
+        <section id="section2">
+            <div  class="container_text">
+                <p class="container_text_p data-font" data-backgrounds="backgrounds">EM CASO DE PIORA, CONSULTE O MÉDICO!</p>
+            </div>
+        </section>
+
+        <section data-backgrounds_whiteGray="backgrounds_whiteGray" id="section_medicine" class="section_medicine">
+            <input onkeyup="filtrar()" id="medicine_search" placeholder="O que você procura ?" type="text" class="data-font">
+                <span id="close_span" class="material-symbols-outlined close_span data-font">close</span>
+            </input>
+        
+
+            <ul data-backgrounds_whiteGray="backgrounds_whiteGray" id="section_medicine_ul" class="section_medicine_ul">
+            </ul>
+            <!-- <span id="section_medicine_icon" class="material-symbols-outlined">search</span> -->
+        </section>
+        
+        <div id="container_loading" class="container_loading">
+            <div class="loading"></div>
+            <div class="loading"></div>
+            <div class="loading"></div>
+            <div id="loading_background" class="loading_background"></div>
+        </div>
+
+        <section id="section3">
+            <div id="section3_horizontalBar" class="section3_horizontalBar">
+                <div id="container_sliders" class="container_sliders">
+                    <div id="container_sliders_window" class="container_sliders_window">
+                       <div data-modal="click" id="0" data-backgrounds_darkGray="backgrounds_darkGray" class="slider">
+                            <img data-backgroundImage="backgrounds_image" src="https://i.im.ge/2023/11/28/CSfrb1.154229-dipirona-500mg-30-comprimidos-generico-medley-p547850-z1-637558212986886456-removebg-preview.png" alt="">
+                            <hr class="slider_hr" data-backgroundsHr="backgrounds_hr">
+                            <p data-name="name" class="data-font slider_p">É um medicamento indicado como analgésico e antitérmico, utilizado no tratamento da dor e da febre. Oferece alívio de 30 a 60 minutos após a ingestão, com efeito sustentando por até 4 horas. Um...<span class="material-symbols-outlined plus data-font" data-backgrounds="backgrounds">add</span></p>
+                        </div>
+                        <div data-modal="click" id="1" data-backgrounds_darkGray="backgrounds_darkGray" class="slider">
+                            <img data-backgroundImage="backgrounds_image" src="https://i.im.ge/2023/10/05/NJqjPm.image-removebg-preview-9.png" alt="">
+                            <hr class="slider_hr" data-backgroundsHr="backgrounds_hr">
+                            <p data-name="name" class="data-font slider_p">Paracetamol é um analgésico e antipirético, sendo indicado para a alívio da dor de intensidade leve a moderada. Podemos encontrar esse medicamento para ser consumido em diversas formas, como por...<span class="material-symbols-outlined plus data-font" data-backgrounds="backgrounds">add</span></p>
+                        </div>
+                        <div data-modal="click" id="2" data-backgrounds_darkGray="backgrounds_darkGray" class="slider">
+                            <img data-backgroundImage="backgrounds_image" src="https://i.im.ge/2023/11/28/CSZWGJ.CQJae4-image-removebg-preview.png" alt="">
+                            <hr class="slider_hr" data-backgroundsHr="backgrounds_hr">
+                            <p data-name="name" class="data-font slider_p">O ibuprofeno é indicado para redução da febre e alívio de dores, tais como: dores decorrentes de gripes e resfriados, dor de garganta, dor de cabeça, dor de dente, dor nas costas, cólicas menstruais...<span class="material-symbols-outlined plus data-font" data-backgrounds="backgrounds">add</span></p>
+                        </div>
+                        <div data-modal="click" id="3" data-backgrounds_darkGray="backgrounds_darkGray" class="slider">
+                            <img data-backgroundImage="backgrounds_image" src="https://i.im.ge/2023/11/28/CSKOg1.image-removebg-preview-1.png" alt="">
+                            <hr class="slider_hr" data-backgroundsHr="backgrounds_hr">
+                            <p data-name="name" class="data-font slider_p">Dorflex é um medicamento que possui ação analgésica e relaxante muscular. É indicado para aliviar dores relacionadas à contratura muscular excessiva, como a dor de cabeça tensional "cefaleia ten...<span class="material-symbols-outlined plus data-font" data-backgrounds="backgrounds">add</span></p>
+                        </div>
+                        <div data-modal="click" id="4" data-backgrounds_darkGray="backgrounds_darkGray" class="slider">
+                            <img data-backgroundImage="backgrounds_image" src="https://i.im.ge/2023/11/28/CSkfQ9.novalgina-500mg-solu-o-oral-gotas-10ml-1-removebg-preview.png" alt="">
+                            <hr class="slider_hr" data-backgroundsHr="backgrounds_hr">
+                            <p data-name="name" class="data-font slider_p">A Novalgina é um medicamento cujo princípio ativo é a dipirona sódica. Este medicamento de uso adulto e pediátrico pode ser encontrado sob outros nomes comerciais como Anador, Nofebrin...<span class="material-symbols-outlined plus data-font" data-backgrounds="backgrounds">add</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <span data-backgrounds="backgrounds" class="material-symbols-outlined arrow">arrow_back_ios_new</span>
+            <span data-backgrounds="backgrounds" class="material-symbols-outlined arrow">arrow_forward_ios</span>
+
+            <div class="comments_box">
+                <p data-backgrounds_whiteGray="backgrounds_whiteGray" id="view_comments" class="comments data-font">Visualizar comentários</p>
+                
+                <a class="comments_box_link" href="javascript:void(0)">
+                    <p data-backgrounds_whiteGray="backgrounds_whiteGray" id="create_comments" class="comments data-font">Criar comentários</p>
+                </a>
+            </div>
+            
+            <div id="comment">
+                <div id="teste_comment">
+                    <div id="comment_container" class="comment_container" data-backgrounds_whiteGray="backgrounds_whiteGray">
+                        <div id="comment_background"></div>
+
+                        <div id="div_close_comments">
+
+                            <span id="close_comments" class="material-symbols-outlined">close</span>
+                        
+                        </div>
+                        <div id="comment_informations">
+
+                            <div class="comment_image" id="comment_image">
+                                <img id="comment_image_img" src="" alt="imagem">
+                            </div>
+                            
+                            <!-- <div id="comment_content" class="comment_content"">
+
+                                <div id="comment_content_informations" class="comment_content_informations">
+
+                                    <p id="comment_content_informations_p">Erick Conrado</p>
+                                    <div id="comment_content_informations_numbers" class="comment_content_informations_numbers">
+
+                                        <div id="identificador" class="identificador">#0001</div>
+                                        <div id="data" class="data">03/01/2007</div>
+
+                                    </div>
+
+                                </div>
+                                <div id="real_comment" class="real_comment">
+                                    <p></p>
+                                </div>
+
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="view_modal" id="view_modal">
+                <div class="modal_background" id="modal_background"></div>
+                <div data-backgrounds_whiteGray="backgrounds_whiteGray" class="modal" id="modal">
+                    <span id="close_modal" class="material-symbols-outlined">close</span>
+                    <div class="medicine">
+                        <div data-backgroundImage="backgrounds_image" id="medicine_image" class="medicine_image">
+                        </div>
+                        <div id="medicine_informations" class="medicine_informations">
+                            <div id="medicine_description" data-backgrounds_darkGray="backgrounds_darkGray" class="medicine_description">
+                                <p id="medicine_description_p" class="data-font"></p>
+                            </div>
+                
+                            <div id="medicine_diseases" class="medicine_diseases">
+                                <div class="medicine_div">
+                                    <span class="data-font">INDICADO</span>
+                                    <div class="medicine_list">
+                                        <ul>
+                                            <li class="medicine_list_li data-font"></li>
+                                            <li class="medicine_list_li data-font"></li>
+                                            <li class="medicine_list_li data-font"></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="medicine_div">
+                                    <span class="data-font">NÃO INDICADO</span>
+                                    <div class="medicine_list data-font">
+                                        <ul>
+                                            <li class="medicine_list_li data-font"></li>
+                                            <li class="medicine_list_li data-font"></li>
+                                            <li class="medicine_list_li data-font"></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section data-backgrounds_darkGray="backgrounds_darkGray" class="section4" id="section4">
+            <div class="section4_div">
+                <p class="section4_div_p data-font">ATUALIZE <br>SUA CARTEIRINHA <br>DE VACINAÇÃO!</p>
+                
+                <div id="move" class="section4_div_box">
+                    <img data-backgroundImage="backgrounds_image" src="https://i.im.ge/2023/08/15/jBWFqX.ze-gotinha-1-removebg-preview.png" alt="">
+                    
+                    <div id="divButton" data-backgrounds="backgrounds" class="divButton data-font"><a href="http://localhost/Trabalho_do_Inter/Vacinacao">ATUALIZE AGORA</a></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="section5">
+            <div class="health">
+                <p data-move="toMove" class="data-font">VACINAS</p>
+                <ul class="data-font">
+                    <li>Infecções com<br>vírus devem ser tratadas com antivirais (vacinas)</li>
+                </ul>
+            </div>
+            
+            <hr class="section5_hr" data-backgroundsHr="backgrounds_hr">
+
+            <div class="health">
+                <p data-move="toMove" class="data-font">ANTIBIÓTICOS</p>
+                <ul class="data-font">
+                    <li>Infecções por<br>bactérias devem ser tratadas com antibióticos.</li>
+                </ul>
+            </div>
+
+            <hr class="section5_hr" data-backgroundsHr="backgrounds_hr">
+
+            <div class="health">
+                <p data-move="toMove" class="data-font">MICÓTICOS</p>
+                <ul class="data-font">
+                    <li>Infecções por<br>fungos devem ser tratadas com antifúngicos.</li>
+                </ul>
+            </div>
+        </section>
+
+        <footer id="footer" data-backgrounds="backgrounds">
+
+            <div><img data-backgroundImage="backgrounds_image" src="https://i.im.ge/2023/10/06/NBepR1.image-removebg-preview.png" alt=""></div>
+
+            <div>
+                <span id="footer_first_span" class="data-font">Mapa do site</span>
+
+                <ul id="footer_first_ul">
+                    <li>
+                        <a href="http://localhost/Trabalho_do_inter" class="data-font">Home</a>
+                    </li>
+                    <li>
+                        <a href="http://localhost/Trabalho_do_Inter/pagina_dos_remedios/" class="data-font">Remédios</a>
+                    </li>
+                    <li>
+                        <a href="http://localhost/Trabalho_do_Inter/pagina_das_doencas/" class="data-font">Doenças/sintomas</a>
+                    </li>
+                    <li>
+                        <a href="http://localhost/Trabalho_do_Inter/forms/forms-cadastro/cadastro.html" class="data-font">Cadastro</a>
+                    </li>
+                    <li>
+                        <a href="http://localhost/Trabalho_do_Inter/vacinacao/" class="data-font">Caderneta de vacinação</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <span id="footer_second_span" class="data-font">Integrantes</span>
+                <ul id="footer_second_ul">
+                    <li class="data-font">Erick Conrado Almeida da Silva</li>
+                    <a href="" class="data-font">Meu Linkedin</a>
+                    <li class="data-font">Evellyn</li>
+                    <a href="" class="data-font">Meu Linkedin</a>
+                    <li class="data-font">Bia</li>
+                    <a href="" class="data-font">Meu Linkedin</a>
+                    <li class="data-font">Alexia</li>
+                    <a href="" class="data-font">Meu Linkedin</a>
+                    <li class="data-font">Italo Monteiro Lopes</li>
+                    <a href="" class="data-font">Meu Linkedin</a>
+                </ul>
+            </div>
+
+            <div>
+                <span id="footer_third_span" class="data-font">Orientadores</span>
+                <ul id="footer_third_ul">
+                    <li class="data-font">Ivan Souza</li>
+                    <li class="data-font">Wesley Castanha de Lima</li>
+                </ul>
+            </div>
+
+        </footer>
+
+        <script src="script.js" defer></script>
+    </body>
+</html>
